@@ -272,7 +272,7 @@ public class TTT_Base {
 					&& !cell8.equals("8") && !cell9.equals("9")) {
 				JOptionPane.showMessageDialog(null, "TIE!!!!", "Not bad",
 						JOptionPane.PLAIN_MESSAGE);
-
+				Playing = false;
 			}
 
 		} while (Playing);
