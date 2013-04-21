@@ -1,4 +1,3 @@
-package TTT_Class;
 
 import javax.swing.JOptionPane;
 
@@ -10,11 +9,12 @@ public class PlayGame {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		TicTacToeClass mTTT = new TicTacToeClass();
-		
+
 		boolean Playing = true;
 		// Loop until game is over
-		do {
+		do {			
 			mTTT.UserMove();
+			Playing = mTTT.CheckWinner();
 			mTTT.ComputerMove();
 			Playing = mTTT.CheckWinner();
 		} while (Playing);
@@ -23,7 +23,7 @@ public class PlayGame {
 
 	}
 
-	
-		
+
+
 
 }
